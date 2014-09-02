@@ -72,7 +72,7 @@
 <h3>
 <a name="input" class="anchor" href="#input"><span class="octicon octicon-link"></span></a>Input</h3>
 <!-- Input -->
-<form oninput="formatted.value='<p>' + names.value.split('\t').join('; ').split(/\r?\n/).join('</p><p>') + '</p>'">
+<form oninput="formatted.value=names.value.split('\t').join('; ')>
 <textarea name="Text1" cols="35" id="names" placeholder="Paste spreadsheet names here..." autofocus
   style="max-height:100px;min-height:100px; resize: none"></textarea>
 <br/>
@@ -80,7 +80,7 @@
 <h3>
 <a name="output" class="anchor" href="#output"><span class="octicon octicon-link"></span></a>Output</h3>
 <!-- Output -->
-<output name="formatted" for="names"></output>
+<output name="formatted" for="names" style = "white-space: pre-wrap"></output>
 </form>
 
 <p></p>
