@@ -66,19 +66,18 @@
 <li>In the now empty checkbox field, copy the formatted output.</li>
 </ol><p>That's it! Seven steps because seven is the most magical number in arithmancy.</p>
 
+<!-- Actual Form -->
 <h2>
 <a name="use-it" class="anchor" href="#use-it"><span class="octicon octicon-link"></span></a>Use it!</h2>
-<form oninput="x.value=a.value.replace('\t', ';')">
-  <input type="text" id="columns" autofocus>
-
 <h3>
 <a name="input" class="anchor" href="#input"><span class="octicon octicon-link"></span></a>Input</h3>
-<output name="x" for="columns"></output>
-</form>
-  
+<form oninput="x.value=names.value.replace('\t', '; ')">
+<textarea name="Text1" cols="35" rows="10" id="names" placeholder="Paste spreadsheet names here..." autofocus></textarea>
 
 <h3>
 <a name="output" class="anchor" href="#output"><span class="octicon octicon-link"></span></a>Output</h3>
+<output name="x" for="names"></output>
+</form>
 
 <p></p>
 
