@@ -71,7 +71,7 @@
 <a name="use-it" class="anchor" href="#use-it"><span class="octicon octicon-link"></span></a>Use it!</h2>
 <h3>
 <a name="input" class="anchor" href="#input"><span class="octicon octicon-link"></span></a>Input</h3>
-<form oninput="formatted.value=names.value.replace('\t', '; ')">
+<form oninput="formatted.value=names.value.split('\t').join('; ')">
 <textarea name="Text1" cols="35" rows="10" id="names" placeholder="Paste spreadsheet names here..." wrap="hard" autofocus></textarea>
 
 <h3>
