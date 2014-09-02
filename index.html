@@ -72,7 +72,7 @@
 <h3>
 <a name="input" class="anchor" href="#input"><span class="octicon octicon-link"></span></a>Input</h3>
 <!-- Input -->
-<form oninput="formatted.value=names.value.split('\t').join('; ').split('\n').join("&#10;")">
+<form oninput="formatted.value=names.value.split('\t').join('; ').split(/\r?\n/g).join("&#10;")">
 <textarea name="Text1" cols="35" id="names" placeholder="Paste spreadsheet names here..." autofocus
   style="max-height:100px;min-height:100px; resize: none"></textarea>
 <br/>
