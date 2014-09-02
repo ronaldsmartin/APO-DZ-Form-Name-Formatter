@@ -1,11 +1,19 @@
 APO-DZ-Form-Name-Formatter
 ==========================
 
-Webapp to format copied spreadsheet columns to Dean's (@turniphead) Google Forms format.
+Simple webapp to format copied spreadsheet columns to Dean's (@turniphead) Google Forms format. This is used for the backend of the [APO app](http://bit.ly/apo-dz).
 
-Basically maps `Last Name\tFirst Name` to `Last Name; First Name` using `<form>` and the new HTML5 `<output>` [tag](http://www.w3schools.com/tags/tag_output.asp).
+The app maps (a newline-separated list of) inputs of the form  `Last Name\tFirst Name` to `Last Name; First Name` using `<form>` and the new HTML5 `<output>` [tag](http://www.w3schools.com/tags/tag_output.asp):
 
-Use or learn about it here: http://ronaldsmartin.github.io/APO-DZ-Form-Name-Formatter
+```html
+<form oninput="formatted.innerHTML=names.value.split('\t').join('; ').split(/\r?\n/).join('<br/>')">
+  <!-- Input -->
+  <textarea cols="35" id="names" placeholder="Paste spreadsheet names here..." autofocus
+  style="max-height:100px;min-height:100px;resize:none"></textarea>
+  
+  <!-- Output -->
+  <output name="formatted" for="names"></output>
+</form>
+```
 
-
-Development is hosted on the gh-pages branch.
+Check it out here: http://ronaldsmartin.github.io/APO-DZ-Form-Name-Formatter
