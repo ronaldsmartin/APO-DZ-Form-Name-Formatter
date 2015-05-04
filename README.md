@@ -1,5 +1,7 @@
 APO-DZ-Form-Name-Formatter
 ==========================
+**EDIT:** *Consider using [transformy](https://www.transformy.io/#/) if this isn't enough for you- it's a very cool, more general tool.*
+
 
 Simple webapp to format copied spreadsheet columns to Dean's (@turniphead) Google Forms format. This is used for the backend of the [APO app](http://bit.ly/apo-dz).
 
